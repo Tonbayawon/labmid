@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+    <input type="number" placeholder="0" id="disp">
+    <br>
+	<button  onclick="attach(this)">1</button>
+	<button  onclick="attach(this)">2</button>
+	<button  onclick="attach(this)">3</button>
+	<button  onclick="attach(this)">4</button>
+	<button  onclick="attach(this)">5</button>
+	<button  onclick="attach(this)">6</button>
+	<button  onclick="attach(this)">7</button>
+	<button  onclick="attach(this)">8</button>
+	<button  onclick="attach(this)">9</button>
+	<button  onclick="attach(this)">0</button>
+
+	<br>
+	<button id="nplus" onclick= "doadd()">+</button>
+	<button id= "nsub" onclick= "dosub()">-</button>
+	<button id="nmult" onclick= "domult()">*</button>
+	<button id="ndiv" onclick= "dodiv()">/</button>
+	<button id="nmod" onclick= "domod()">%</button>
+	<button id="nexpo" onclick= "doexpo()">x2</button>
+	<button id="nequ" onclick= "doequ()">=</button>
+	<br>
+	<button id="era" onclick= "doerase()">Backspace</button>
+	<button id="clr" onclick= "doclear()">C</button>
+    
+
+    <script type="text/javascript">
+
+
+    	let num = document.getElementById("disp");
+    	let numHolder = parseInt(num.value);
+    	let optr;
+
+    	function attach(e){
+    		num.value += e.innerHTML;
+    	}
+
+    	function doadd() {
+    		optr = "+";
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+    	function dosub() {
+    		optr = "-";
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+    	function domult() {
+    		optr = "*";
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+    	function dodiv() {
+    		optr = "/;
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+    	function domod() {
+    		optr = "%";
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+    	function doexpo() {
+    		optr = "x2";
+    		numHolder = parseInt(num.value);
+    		num.value = "";
+    	}
+
+
+        function doequ() {
+        	switch(optr){
+        	n.value += e.innerHTML;
+    	    case "+":
+    	             n.value = numHolder + parseInt(n.value);
+    	             break;
+    	     case "-":
+    	             n.value = numHolder - parseInt(n.value);
+    	             break;
+    	     case "*":
+    	             n.value = numHolder * parseInt(n.value);
+    	             break;
+    	     case "/":
+    	             n.value = numHolder / parseInt(n.value);
+    	             break;
+    	     case "%":
+    	             n.value = numHolder % parseInt(n.value);
+    	             break;
+    	     
+    	   
+    	     
+    	     
+
+            }
+        }
+
+
+    	
+    </script>
+
+
+
+</body>
+</html
+
+<input type="button" class="operator" name="addition" value="add">
